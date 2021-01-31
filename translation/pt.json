@@ -1,0 +1,12 @@
+{
+  "app_name": "Gerador de Senhas Aleatórias",
+  "app_description": "Lorem ipsum dolor sit amet, adipiscing elit consectetur. Lorem ipsum dolor sit amet, adipiscing elit consectetur. Lorem ipsum dolor sit amet, adipiscing elit consectetur.",
+  "btn_generate_password": "Gerar Nova Senha",
+  "uppercase": "Letras maiúsculas",
+  "lowercase": "Letras minúsculas",
+  "numbers": "Números",
+  "symbols": "Simbolos",
+  "similarCharacters": "Remover caracteres parecidos",
+  "repeatedCharacters": "Remover caracteres repetidos",
+  "passwordLength": "Tamanho da senha: "
+}

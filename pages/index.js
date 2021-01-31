@@ -1,65 +1,26 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import translation from '../translation/pt.json';
+import Checkbox from '../src/components/Checkbox';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+    <section className="w-screen h-screen">
+      <div className="px-4 pt-10 max-w-2xl">
+        <h1 className="text-3xl font-bold text-800">{translation.app_name}</h1>
+        <p className="text-gray-400 mt-4 text-sm max-w-md">{translation.app_description}</p>
+        <form className="mt-8">
+          <Checkbox name={"uppercase"} label={translation.uppercase} />
+          <Checkbox name={"lowercase"} label={translation.lowercase} />
+          <Checkbox name={"numbers"} label={translation.numbers} />
+          <Checkbox name={"symbols"} label={translation.symbols} />
+          <Checkbox name={"similar-characters"} label={translation.similarCharacters} />
+          <Checkbox name={"repeated-characters"} label={translation.repeatedCharacters} />
+          <div>
+            <label htmlFor="password-length">{translation.passwordLength}</label>
+            <input type="number" id="password-length" value="8" />
+          </div>
+          <button className="block mt-8 bg-gray-800 text-white font-medium py-2 px-5 rounded mx-auto hover:bg-gray-700 focus:outline-none">{translation.btn_generate_password}</button>
+        </form>
+      </div>
+    </section>
   )
 }
