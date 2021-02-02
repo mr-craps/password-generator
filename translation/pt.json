@@ -1,12 +1,12 @@
 {
   "app_name": "Gerador de Senhas Aleatórias",
-  "app_description": "Lorem ipsum dolor sit amet, adipiscing elit consectetur. Lorem ipsum dolor sit amet, adipiscing elit consectetur. Lorem ipsum dolor sit amet, adipiscing elit consectetur.",
-  "btn_generate_password": "Gerar Nova Senha",
+  "app_description": "Melhor gerador de senhas online para criar senhas para sites, email e mídias sociais como facebook, instagram e outras contas gratuitamente.",
+  "generate_password": "Gerar Nova Senha",
   "uppercase": "Letras maiúsculas",
   "lowercase": "Letras minúsculas",
   "numbers": "Números",
-  "symbols": "Simbolos",
+  "symbols": "Símbolos",
   "similarCharacters": "Remover caracteres parecidos",
   "repeatedCharacters": "Remover caracteres repetidos",
-  "passwordLength": "Tamanho da senha: "
+  "passwordLength": "Tamanho da senha:"
 }
